@@ -1,12 +1,16 @@
+:root {
+    --black: #071629;
+    --purple: #C271FF;
+}
 body {
     block-size: auto;
     overflow: auto;
     text-align: center;
 }
 
-.background-image{
+.title-background-image{
     background-position: center center;
-    background-image: url("./images/background-image.png");
+    background-image: url(images/pic_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -53,7 +57,7 @@ header {
     padding: 40px 0px 0px 0px;
 }
 .block-two h2 span {
-    color: #C271FF;
+    color: var(--purple);
 }
 
 .block-two {
@@ -76,7 +80,7 @@ header {
 
 .quote-section {
     color: white;
-    background-color: #C271FF;
+    background-color: var(--purple);
     display: flex;
     justify-content: center;
     align-items: left;
@@ -104,7 +108,7 @@ header {
 }
 
 .quote-details blockquote {
-    background-color: #C271FF;
+    background-color: var(--purple);
     font-style: italic;
 }
 
@@ -120,12 +124,12 @@ header {
     text-align: center;
     font-size: 2em;
     margin-bottom: 40px;
-    color: #071629;
+    color: var(--black);
     align-items: row;
 }
 
 .videos-section h2 span {
-    color: #C271FF;
+    color: var(--purple);
     font-size: medium;
     text-align: center;
     margin-bottom: 1px;
@@ -176,7 +180,7 @@ header {
 
 .video-author h3 {
     margin: 0px;
-    color: #C271FF;
+    color: var(--purple);
 }
 
 .video-rating{
@@ -190,11 +194,11 @@ header {
 
 .video-rating p {
     margin-left: auto;
-    color: #C271FF;
+    color: var(--purple);
 }
 
 .membership-section {
-    background-color: #071629;
+    background-color: var(--black);
     color: white;
     text-align: center;
     font-size: 12px;
@@ -209,7 +213,7 @@ header {
 }
 
 .membership-section h1 span {
-    color: #C271FF;
+    color: var(--purple);
     font-weight: bold;
 }
 
@@ -225,7 +229,7 @@ header {
 
 .header-div {
     text-align: center;
-    color: #071629;
+    color: var(--black);
     font-size: 32px;
     margin-bottom: 40px;
 }
@@ -244,7 +248,7 @@ header {
 }
 
 footer {
-    background-color: #071629;
+    background-color: var(--black);
     padding: 40px;
     color: white;
 }

@@ -2,70 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>SmileSchool</title>
 </head>
-<body class="background-image">
-  <header>
-    <div style ="float: left;">
-      <a><img src="./images/logo.png"></a>
-    </div>
-    <div style="float: right">
-      <a href="">COURSES</a>
-      <a href="">PRICING</a>
-      <a href="">LOGIN</a>
-    </div>
-  </header>
-  <main>
-    <!--Banner Header-->
-    <section class="banner-section">
-      <div class="block-one">
-        <h1>Get schooled</h1>
-        <p>
-          <span>SMILE</span>
-          <span>GRIN</span>
-          <span>LAUGH</span>
-        </p>
-        <button type="register"><img src="./images/banner-button.png" alt="image"></button>
+<body class="text-center">
+  <div class="">
+    <header>
+      <div>
+        <a class="img-fluid float-start"><img src="images/logo.png"></a>
       </div>
-      <div class="block-two">
-        <h2>LEARN FROM THE PROS</h2>
-        <div class="block-pros">
-          <div>
-            <img src="./images/pros-1.png" alt="walters">
-            <h3>Evan Newman</h3>
-            <p>Smile of the Year</p>
-            <p>2029</p>
-          </div>
-          <div>
-            <img src="./images/pros-2.png" alt="lawrence">
-            <h3>Sarah Markland</h3>
-            <p>Smile of ye olden Times </p>
-            <p>1780</p>
-          </div>
-          <div>
-            <img src="./images/pros-3.png" alt="massey">
-            <h3>Ben Harper</h3>
-            <p>Smile while thinking of sad things</p>
-            <p> 2020</p>
-          </div>
-          <div>
-            <img src="./images/pros-4.png" alt="hughes">
-            <h3>Karis Richarson</h3>
-            <p>Smile Like a regular Dweeb</p>
-            <p>2030</p>
+      <div class="text-right">
+        <a href="">COURSES</a>
+        <a href="">PRICING</a>
+        <a href="">LOGIN</a>
+      </div>
+    </header>
+    <main>
+      <!--Banner Header-->
+      <section class="banner-section">
+        <div class="block-one">
+          <h1 class="h1 fw-b fs-1">Get schooled</h1>
+          <p>
+            <span class="p-3">SMILE</span>
+            <span class="p-3">GRIN</span>
+            <span class="p-3">LAUGH</span>
+          </p>
+          <button type="register">Register for free</button>
+        </div>
+        <div class="align-bottom">
+          <h5 class="display-5">Learn from the pros</h2>
+          <div class="d-flex bd-highlight mb-3 content-around">
+            <div class="text-center p-2 col-sm">
+              <img src="images/profile_1.jpg" alt="walters">
+              <h3>Evan Newman</h3>
+              <p>Smile of the Year</p>
+              <p>2029</p>
+            </div>
+            <div class="text-center p-2 col-sm">
+              <img src="images/profile_2.jpg" alt="lawrence">
+              <h3>Sarah Markland</h3>
+              <p>Smile of ye olden Times </p>
+              <p>1780</p>
+            </div>
+            <div class="text-center p-2 col-sm">
+              <img src="images/profile_3.jpg" alt="massey">
+              <h3>Ben Harper</h3>
+              <p>SHHHHHHH BE QUIET</p>
+              <p> 2020</p>
+            </div>
+            <div class="text-center p-2 col-sm">
+              <img src="images/profile_4.jpg" alt="hughes">
+              <h3>Karis Richardson</h3>
+              <p>Smile Like a regular Dweeb</p>
+              <p>2030</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+  </div>
+  
     <!--end of banner-->
 
     <section class="quote-section">
-      <div class="quote-block">
-        <img src="./images/laughing-smile.png" alt="Image description">
+      <div class="quote-block row">
+        <img src="images/profile_5.jpg" alt="image description">
         <div clas="quote-details">
-          <blockquote>Hi, my name is Caramon and I am a cool big CEO guy. I love smiling, and other things but mainly smiling. This is the best website ever to learn how to smile as cool as me. </blockquote>
+          <p class="text-wrap align-left" style="width: 50rem;">Hi, my name is Caramon and I am a cool big CEO guy. I love smiling, and other things but mainly smiling. This is the best website ever to learn how to smile as cool as me. </p>
           <p class="person-quote">Caramon Mustang</p>
           <p>A Big Man CEO</p>
         </div>
@@ -77,78 +85,78 @@
       <h1>Header1</h1>
       <div class="video-block">
         <div class="video">
-          <img src="./images/video.svg" alt="Video-2">
+          <img src="images/play.png" alt="Video-2">
           <h2>Header2</h2>
           <p>Description</p>
           <div class="video-author">
-              <img src="./images/sad-smile.png" alt="massey">
+              <img src="images/thumbnail_1.jpg" alt="massey">
               <h3>Header3</h3>
           </div>
           <div class="video-rating">
             <div class="stars">
-              <img src="./images/1star.png" alt="star 1">
-              <img src="./images/2star.png" alt="star 2">
-              <img src="./images/3star.png" alt="star 3">
-              <img src="./images/4star.png" alt="star 4">
-              <img src="./images/EmptyStar.png" alt="emptystar">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_off.png" alt="emptystar">
             </div>
             <p>time of video</p>
           </div>
         </div>
         <div class="video">
-          <img src="./images/video.svg" alt="Video-2">
+          <img src="images/play.png" alt="Video-2">
           <h2>Header</h2>
           <p>Description</p>
           <div class="video-author">
-              <img src="./images/diagonal-smile.png" alt="massey">
+              <img src="images/thumbnail_2.jpg" alt="massey">
               <h3>Header</h3>
           </div>
           <div class="video-rating">
             <div class="stars">
-              <img src="./images/1star.png" alt="star 1">
-              <img src="./images/2star.png" alt="star 2">
-              <img src="./images/3star.png" alt="star 3">
-              <img src="./images/4star.png" alt="star 4">
-              <img src="./images/EmptyStar.png" alt="emptystar">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_off.png" alt="emptystar">
             </div>
             <p>time of video</p>
           </div>
         </div>
         <div class="video">
-          <img src="./images/video.svg" alt="Video-2">
+          <img src="images/play.png" alt="Video-2">
           <h2>Header2</h2>
           <p>Description</p>
           <div class="video-author">
-              <img src="./images/happy-smile.png" alt="massey">
+              <img src="images/thumbnail_3.jpg" alt="massey">
               <h3>Header3</h3>
           </div>
           <div class="video-rating">
             <div class="video-rating">
               <div class="stars">
-                <img src="./images/1star.png" alt="star 1">
-                <img src="./images/2star.png" alt="star 2">
-                <img src="./images/3star.png" alt="star 3">
-                <img src="./images/4star.png" alt="star 4">
-                <img src="./images/EmptyStar.png" alt="emptystar">
+                <img src="images/star_on.png" alt="star">
+                <img src="images/star_on.png" alt="star">
+                <img src="images/star_on.png" alt="star">
+                <img src="images/star_on.png" alt="star">
+                <img src="images/star_off.png" alt="emptystar">
               </div>
             <p>time of video</p>
           </div>
         </div>
         <div class="video">
-          <img src="./images/video.svg" alt="Video-2">
+          <img src="images/play.png" alt="Video-2">
           <h2>Header2</h2>
           <p>Description</p>
           <div class="video-author">
-              <img src="./images/natural-smile.png" alt="massey">
+              <img src="images/thumbnail_4.jpg" alt="massey">
               <h3>Header3</h3>
           </div>
           <div class="video-rating">
             <div class="stars">
-              <img src="./images/1star.png" alt="star 1">
-              <img src="./images/2star.png" alt="star 2">
-              <img src="./images/3star.png" alt="star 3">
-              <img src="./images/4star.png" alt="star 4">
-              <img src="./images/EmptyStar.png" alt="emptystar">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_on.png" alt="star">
+              <img src="images/star_off.png" alt="emptystar">
             </div>
             <p>time of video</p>
           </div>
@@ -161,33 +169,33 @@
       <p>Membership</p>
       <div class="membership-block">
         <div class="review-block">
-          <img src="./images/purple-logo.png" alt="image">
+          <img src="images/purple-logo.png" alt="image">
           <h2>This is Cool</h2>
           <p>review</p>
         </div>
         <div class="review-block">
-          <img src="./images/purple-logo.png" alt="image">
+          <img src="images/purple-logo.png" alt="image">
           <h2>This is Cool</h2>
           <p>review</p>
         </div>
         <div class="review-block">
-          <img src="./images/purple-logo.png" alt="image">
+          <img src="images/purple-logo.png" alt="image">
           <h2>This is Cool</h2>
           <p>review</p>
         </div>
         <div class="review-block">
-          <img src="./images/purple-logo.png" alt="image">
+          <img src="images/purple-logo.png" alt="image">
           <h2>This is Cool</h2>
           <p>review</p>
         </div>
       </div>
-      <button type="register2"><img src="./images/register-button.png" alt="image"></button>
+      <button type="register2">Register for free</button>
     </section>
     <!--end of membership section-->
     <!--start of FAQ section-->
     <section class="FAQ-section">
       <h2>F.A.Q</h2>
-      <div class="FAQ-block" display: inline-grid>
+      <div class="FAQ-block">
         <div class="FAQ-row">
           <div class="FAQ-item">
             <h3>How does this work?</h3>
@@ -216,16 +224,16 @@
     <!--start of footer section-->
     <div class="socials-block">
       <div class="footer-row">
-        <img src="./images/purple-logo.png" alt="Image">
+        <img src="images/purple-logo.png" alt="Image">
         <div class="footer-ref-block">
           <a href="socials">
-            <img src="./images/instagram.png" alt="Image">
+            <img src="images/instagram.png" alt="Image">
           </a>
           <a href="socials">
-            <img src="./images/twitter.png" alt="Image">
+            <img src="images/twitter.png" alt="Image">
           </a>
           <a href="socials">
-            <img src="./images/facebook.png" alt="Image">
+            <img src="images/facebook.png" alt="Image">
           </a>
           <p>Copyright or some shiz</p>
         </div>
