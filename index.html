@@ -20,7 +20,7 @@
       padding-bottom: 150px;
     }
     .custom-line-height {
-      line-height: 1.5;
+      line-height: 1.7;
     }
     .larger-text {
       font-size: 700%;
@@ -35,6 +35,9 @@
     }
     .white-text {
       color: white;
+    }
+    .purple-text {
+      color: #C271FF;
     }
     .move-items-down {
       position: relative;
@@ -52,6 +55,28 @@
     .carousel-caption p {
       margin-bottom: 10px;
     }
+    .video-author {
+      width: 30px;
+      height: 30px;
+      margin-right: 1px;
+    }
+    .dark-bg {
+      background-color: #071629;
+    }
+    .play-mod {
+      width: 125px;
+      height: 125px;
+    }
+    .free-membership {
+      padding-top: 75px;
+      padding-bottom: 60px;
+    }
+    .smile-style {
+      width: 60px;
+      height: 50px;
+      margin: 5px;
+      padding: 10px;
+    }
   </style>
 </head>
 
@@ -65,9 +90,9 @@
               <a class="img-fluid"><img src="images/logo.png"></a>
             </div>
             <div class="col-6 text-right">
-              <a class="p-3 white-text" href="">COURSES</a>
-              <a class="p-3 white-text" href="">PRICING</a>
-              <a class="p-3 white-text" href="">LOGIN</a>
+              <a class="p-3 white-text font-weight-light" href="">COURSES</a>
+              <a class="p-3 white-text font-weight-light" href="">PRICING</a>
+              <a class="p-3 white-text font-weight-light" href="">LOGIN</a>
             </div>
           </div>
         </div>
@@ -75,11 +100,11 @@
         <!--Banner Header-->
         <section class="banner-section">
           <div class="block-one">
-            <h1 class="larger-text fs-1"><b>Get schooled</b></h1>
+            <h1 class="larger-text fs-1 pt-5"><b>Get schooled</b></h1>
             <p>
-              <span class="p-3"><b>SMILES</b></span>
-              <span class="p-3"><b>GRIN</b></span>
-              <span class="p-3"><b>LAUGH</b></span>
+              <span class="p-3 font-weight-light"><b>SMILES</b></span>
+              <span class="p-3 font-weight-light"><b>GRIN</b></span>
+              <span class="p-3 font-weight-light"><b>LAUGH</b></span>
             </p>
             <img src="images/Button.png" alt="">
           </div>
@@ -122,9 +147,9 @@
             <div class="container my-5">
               <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-sm-4">
-                  <img src="images/profile_5.jpg" class="rounded-circle" alt="Quote Image"/>
+                  <img src="images/profile_5.jpg" class="rounded-circle w-50 custom-image image-fluid" alt="Quote Image"/>
                 </div>
-                <div class="col-12 col-sm-8 mt-5 ">
+                <div class="col-12 col-sm-8 mt-5">
                   <p class="text-left">Hi, my name is Caramon and I am a cool big CEO guy. I love smiling, and other things but mainly smiling. This is the best website ever to learn how to smile as cool as me.</p>
                   <p class="text-left"><b>Caramon Hofstetter</b></p>
                   <p class="text-left"><i>big CEO man</i></p>
@@ -136,9 +161,9 @@
             <div class="container my-5">
               <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-sm-4">
-                  <img src="images/profile_5.jpg" class="rounded-circle" alt="Quote Image"/>
+                  <img src="images/profile_5.jpg" class="rounded-circle w-50  custom-image text-center image-fluid" alt="Quote Image"/>
                 </div>
-                <div class="col-12 col-sm-8 mt-5 mt-sm-0">
+                <div class="col-12 col-sm-8 mt-5">
                   <p class="text-left">Hi, my name is Caramon and I am a cool big CEO guy. I love smiling, and other things but mainly smiling. This is the best website ever to learn how to smile as cool as me.</p>
                   <p class="text-left"><b>Caramon Hofstetter</b></p>
                   <p class="text-left"><i>big CEO man</i></p>
@@ -148,95 +173,342 @@
           </div>
         </div>
         <a class="carousel-control-prev" href="#quote" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="my-2" aria-hidden="true">
+            <img src="./images/arrow_white_left.png" style="height: 30px;" alt="Next">
+          </span>
+          <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#quote" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="" aria-hidden="true">
+            <img src="./images/arrow_white_right.png" style="height: 30px;" alt="Next">
+          </span>
+          <span class="sr-only">Next</span>
         </a>
       </div>
     </section>
 
     <!--start of video section -->
-    <section class="video-section">
-      
+    <section class="videos-section py-5 bg-light">
+      <h2 class="text-center mb-4 font-weight-light pb-4">
+        Most <span class="purple-text font-weight-bold">popular</span> tutorials
+      </h2>
+      <div id="videosCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <!-- Diagonal Smile Video Item -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5">
+                  <div>
+                    <div class="video-preview position-relative">
+                      <img src="images/thumbnail_1.jpg" alt="Diagonal Smile" class="img-fluid"/>
+                      <img class="card-img-overlay mx-auto my-auto play-mod" src="images/play.png">
+                    </div>
+                    <h5>Diagonal Smile</h5>
+                    <p>discription of the video and a lot of text so it looks nice</p>
+                    <div class="d-flex align-items-center">
+                        <img src="images/profile_1.jpg" alt="Author" class="rounded-circle video-author"/>
+                      <a href="#" class="author-name purple-text m-1">Phillip Massey</a>
+                    </div>
+                    <div class="video-rating d-flex align-items-center">
+                      <div>
+                        <img src="images/star_on.png" alt="Star 1" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 2" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 3" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 4" class="star-icon" />
+                        <img src="images/star_off.png" alt="Star 5" class="star-icon"/>
+                      </div>
+                      <p class="ml-auto purple-text">8 min</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Sad Smile Video Item -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5">
+                  <div>
+                    <div class="video-preview position-relative">
+                      <img src="images/thumbnail_2.jpg" alt="Sad Smile" class="img-fluid"/>
+                      <img class="card-img-overlay mx-auto my-auto play-mod" src="images/play.png">
+                    </div>
+                    <h5>Sad Smile</h5>
+                    <p>discription of the video and a lot of text so it looks nice</p>
+                    <div class="d-flex align-items-center">
+                      <img src="images/profile_1.jpg" alt="Author" class="rounded-circle video-author"/>
+                      <a href="#" class="author-name purple-text m-1">Nannie Lawrence</a>
+                    </div>
+                    <div class="video-rating d-flex align-items-center">
+                      <div>
+                        <img src="images/star_on.png" alt="Star 1" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 2" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 3" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 4" class="star-icon" />
+                        <img src="images/star_off.png" alt="Star 5" class="star-icon"/>
+                      </div>
+                      <p class="ml-auto purple-text">8 min</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Natural Smile Video Item -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5">
+                  <div>
+                    <div class="video-preview position-relative">
+                      <img src="images/thumbnail_3.jpg" alt="Natural Smile" class="img-fluid"/>
+                      <img class="card-img-overlay mx-auto my-auto play-mod" src="images/play.png">
+                    </div>
+                    <h5>Natural Smile</h5>
+                    <p>discription of the video and a lot of text so it looks nice</p>
+                    <div class="d-flex align-items-center">
+                      <img src="images/profile_1.jpg" alt="Author" class="rounded-circle video-author"/>
+                      <a href="#" class="author-name purple-text m-1">Bruce Walters</a>
+                    </div>
+                    <div class="d-flex align-items-center ">
+                      <div class="">
+                        <img src="images/star_on.png" alt="Star 1" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 2" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 3" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 4" class="star-icon" />
+                        <img src="images/star_off.png" alt="Star 5" class="star-icon"/>
+                      </div>
+                      <p class="ml-auto purple-text">8 min</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Happy Smile Video Item -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5">
+                  <div>
+                    <div class="video-preview position-relative">
+                      <img src="images/thumbnail_4.jpg" alt="Happy Smile" class="img-fluid"/>
+                      <img class="card-img-overlay mx-auto my-auto play-mod" src="images/play.png">
+                    </div>
+                    <h5>Happy Smile</h5>
+                    <p>discription of the video and a lot of text so it looks nice</p>
+                    <div class="d-flex align-items-center">
+                      <img src="images/profile_1.jpg" alt="Author" class="rounded-circle video-author"/>
+                      <a href="#" class="author-name purple-text m-1">Henry Hughes</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div class="m-2">
+                        <img src="images/star_on.png" alt="Star 1" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 2" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 3" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 4" class="star-icon" />
+                        <img src="images/star_off.png" alt="Star 5" class="star-icon"/>
+                      </div>
+                      <p class="ml-auto purple-text">8 min</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#quote" role="button" data-slide="prev">
+          <span class="my-2" aria-hidden="true">
+            <img src="./images/arrow_black_left.png" style="height: 30px;" alt="Next">
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#quote" role="button" data-slide="next">
+          <span class="" aria-hidden="true">
+            <img src="./images/arrow_black_right.png" style="height: 30px;" alt="Next">
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </section>
-    
     <!--end of video-section -->
     <!--start of membership section-->
-    <section class="membership-section">
-      <p>Membership</p>
-      <div class="membership-block">
-        <div class="review-block">
-          <img src="images/purple-logo.png" alt="image">
-          <h2>This is Cool</h2>
-          <p>review</p>
-        </div>
-        <div class="review-block">
-          <img src="images/purple-logo.png" alt="image">
-          <h2>This is Cool</h2>
-          <p>review</p>
-        </div>
-        <div class="review-block">
-          <img src="images/purple-logo.png" alt="image">
-          <h2>This is Cool</h2>
-          <p>review</p>
-        </div>
-        <div class="review-block">
-          <img src="images/purple-logo.png" alt="image">
-          <h2>This is Cool</h2>
-          <p>review</p>
+    <section class="membership-section dark-bg white-text free-membership">
+      <span class="purple-text h3 font-weight-bold">Free</span><span class="font-weight-light h3"> membership</span>
+      <div class="container-lg pt-5">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 p-4 text-center custom-line-height">
+              <img src="images/smile_on.png" alt="image" class="smile-style"> <br>
+              <span class="font-weight-light lead h-3"><b>Lorem ipsum</b></span> <br>
+              <span class="font-weight-light">I've hacked in I'm in the mainframe</span>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 p-4 text-center custom-line-height">
+              <img src="images/smile_on.png" alt="image" class="smile-style"> <br>
+              <span class="font-weight-light lead h-3"><b>Lorem ipsum</b></span> <br>
+              <span class="font-weight-light">I've hacked in I'm in the mainframe</span>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 p-4 text-center custom-line-height">
+              <img src="images/smile_on.png" alt="image" class="smile-style"> <br>
+              <span class="font-weight-light lead h-3"><b>Lorem ipsum</b></span> <br>
+              <span class="font-weight-light">I've hacked in I'm in the mainframe</span>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 p-4 text-center custom-line-height">
+              <img src="images/smile_on.png" alt="image" class="smile-style"> <br>
+              <span class="font-weight-light lead h-3"><b>Lorem ipsum</b></span> <br>
+              <span class="font-weight-light">I've hacked in I'm in the mainframe</span>
+            </div>
+          </div>
         </div>
       </div>
-      <button type="register2">Register for free</button>
+      <img src="images/Button.png" alt="register button" class="pt-5">
     </section>
     <!--end of membership section-->
-    <!--start of FAQ section-->
-    <section class="FAQ-section">
-      <h2>F.A.Q</h2>
-      <div class="FAQ-block">
-        <div class="FAQ-row">
-          <div class="FAQ-item">
-            <h3>How does this work?</h3>
-            <p>Text</p>
-          </div>
-          <div class="FAQ-item">
-            <h3>How does this work?</h3>
-            <p>Text</p>
+    <!--start of Latest Video section-->
+    <section class="videos-section py-5 bg-light">
+      <h2 class="text-center mb-4 font-weight-light h3">
+        <span class="purple-text font-weight-bold">Latest</span> videos
+      </h2>
+      <div id="videosCarousel" class="carousel slide pt-4" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <!-- Inverted Smile Video Item -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5">
+                  <div>
+                    <div class="video-preview position-relative">
+                      <img src="images/thumbnail_1.jpg" alt="Diagonal Smile" class="img-fluid"/>
+                      <img class="card-img-overlay mx-auto my-auto play-mod" src="images/play.png">
+                    </div>
+                    <h5>Inverted Smile</h5>
+                    <p>discription of the video and a lot of text so it looks nice</p>
+                    <div class="d-flex align-items-center">
+                        <img src="images/profile_1.jpg" alt="Author" class="rounded-circle video-author"/>
+                      <a href="#" class="author-name purple-text m-1">Phillip Massey</a>
+                    </div>
+                    <div class="video-rating d-flex align-items-center">
+                      <div>
+                        <img src="images/star_on.png" alt="Star 1" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 2" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 3" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 4" class="star-icon" />
+                        <img src="images/star_off.png" alt="Star 5" class="star-icon"/>
+                      </div>
+                      <p class="ml-auto purple-text">8 min</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Sad Smile Video Item -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5">
+                  <div>
+                    <div class="video-preview position-relative">
+                      <img src="images/thumbnail_2.jpg" alt="Sad Smile" class="img-fluid"/>
+                      <img class="card-img-overlay mx-auto my-auto play-mod" src="images/play.png">
+                    </div>
+                    <h5>Sad Smile</h5>
+                    <p>discription of the video and a lot of text so it looks nice</p>
+                    <div class="d-flex align-items-center">
+                      <img src="images/profile_1.jpg" alt="Author" class="rounded-circle video-author"/>
+                      <a href="#" class="author-name purple-text m-1">Nannie Lawrence</a>
+                    </div>
+                    <div class="video-rating d-flex align-items-center">
+                      <div>
+                        <img src="images/star_on.png" alt="Star 1" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 2" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 3" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 4" class="star-icon" />
+                        <img src="images/star_off.png" alt="Star 5" class="star-icon"/>
+                      </div>
+                      <p class="ml-auto purple-text">8 min</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Natural Smile Video Item -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5">
+                  <div>
+                    <div class="video-preview position-relative">
+                      <img src="images/thumbnail_3.jpg" alt="Natural Smile" class="img-fluid"/>
+                      <img class="card-img-overlay mx-auto my-auto play-mod" src="images/play.png">
+                    </div>
+                    <h5>Natural Smile</h5>
+                    <p>discription of the video and a lot of text so it looks nice</p>
+                    <div class="d-flex align-items-center">
+                      <img src="images/profile_1.jpg" alt="Author" class="rounded-circle video-author"/>
+                      <a href="#" class="author-name purple-text m-1">Bruce Walters</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <img src="images/star_on.png" alt="Star 1" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 2" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 3" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 4" class="star-icon" />
+                        <img src="images/star_off.png" alt="Star 5" class="star-icon"/>
+                      </div>
+                      <p class="ml-auto purple-text">8 min</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Happy Smile Video Item -->
+                <div class="col-12 col-md-6 col-lg-3 mb-5">
+                  <div>
+                    <div class="video-preview position-relative">
+                      <img src="images/thumbnail_4.jpg" alt="Happy Smile" class="img-fluid"/>
+                      <img class="card-img-overlay mx-auto my-auto play-mod" src="images/play.png">
+                    </div>
+                    <h5>Happy Smile</h5>
+                    <p>discription of the video and a lot of text so it looks nice</p>
+                    <div class="d-flex align-items-center">
+                      <img src="images/profile_1.jpg" alt="Author" class="rounded-circle video-author"/>
+                      <a href="#" class="author-name purple-text m-1">Henry Hughes</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <div>
+                        <img src="images/star_on.png" alt="Star 1" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 2" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 3" class="star-icon" />
+                        <img src="images/star_on.png" alt="Star 4" class="star-icon" />
+                        <img src="images/star_off.png" alt="Star 5" class="star-icon"/>
+                      </div>
+                      <p class="ml-auto purple-text">8 min</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="FAQ-row">
-          <div class="FAQ-item">
-            <h3>How does this work?</h3>
-            <p>Text</p>
-          </div>
-        <div class="FAQ-item">
-          <h3>How does this work?</h3>
-          <p>Text</p>
-        </div>
+        <a class="carousel-control-prev" href="#quote" role="button" data-slide="prev">
+          <span class="my-2" aria-hidden="true">
+            <img src="./images/arrow_black_left.png" style="height: 30px; margin-right: 30px;" alt="Next">
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#quote" role="button" data-slide="next">
+          <span class="" aria-hidden="true">
+            <img src="./images/arrow_black_right.png" style="height: 30px; margin-left: 30px;" alt="Next">
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-    </div>
-  </main>
-    <footer>
     </section>
-    <!--end of FAQ section-->
+  </main>
+    <!--end of Latest Videos section-->
     <!--start of footer section-->
-    <div class="socials-block">
-      <div class="footer-row">
-        <img src="images/purple-logo.png" alt="Image">
-        <div class="footer-ref-block">
-          <a href="socials">
-            <img src="images/instagram.png" alt="Image">
-          </a>
-          <a href="socials">
-            <img src="images/twitter.png" alt="Image">
-          </a>
-          <a href="socials">
-            <img src="images/facebook.png" alt="Image">
-          </a>
-          <p>Copyright or some shiz</p>
+    <footer class="page-footer dark-bg pt-4">
+      <div class="container-lg">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center my-5 px-sm-4">
+          <div class="pl-2 pl-sm-0">
+            <img class="mx-3" src="images/logo.png" alt="">
+          </div>
+        <div class="d-flex mt-4">
+          <div class="row">
+              <ul class="list-group list-group-horizontal list-unstyled">
+                <li class="ml-3">
+                  <a class="text-decoration-none" href="https://www.facebook.com/HolbertonSchool/" aria-label="Facebook">
+                    <img src="images/Facebook_White.png" alt="facebook">
+                  </a>
+                </li>
+                <li class="ml-3">
+                  <a class="text-decoration-none" href="https://twitter.com/holbertonschool" aria-label="Twitter">
+                    <img src="images/Twitter_White.png" alt="twitter">
+                  </a>
+                </li>
+                <li class="ml-3">
+                  <a class="text-decoration-none" href="https://www.instagram.com/holbertonschool/" aria-label="Instagram">
+                    <img src="images/Instagram_White.png" alt="instagram">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    <p class="text-center text-muted small pb-3 " style="margin-top: 5rem;">©smileschool 2020</p>
   </footer>
 </body>
 </html>
